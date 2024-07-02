@@ -21,7 +21,9 @@ class Action:
     # open url method to open url
     def open_url(self):
         try:
+            # maximize window method to maximize window
             self.driver.maximize_window()
+            # get method to open url
             self.driver.get(self.url)
             return True
         except Exception as e:
